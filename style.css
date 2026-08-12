@@ -859,11 +859,17 @@ transform:translateY(0);
 
 }
 .office-logo {
-    width: 250px !important;
-    height: 150px !important;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
     display: block;
     margin: 20px auto;
-    border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+    .office-logo {
+        width: 90%;
+        height: 180px;
+    }
 }
+
