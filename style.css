@@ -858,8 +858,9 @@ opacity:1;
 transform:translateY(0);
 
 }
-.office-logo {
+.hero.office-logo {
     width: 300px;
+   max-width:300px;
     height: 200px;
     object-fit: cover;
     display: block;
@@ -867,8 +868,9 @@ transform:translateY(0);
 }
 
 @media (max-width: 768px) {
-    .office-logo {
+    .hero.office-logo {
         width: 90%;
+       max-width:320px;
         height: 180px;
     }
 }
