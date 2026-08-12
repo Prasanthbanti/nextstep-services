@@ -863,5 +863,7 @@ transform:translateY(0);
     height: 100px !important;
     max-width: 100px !important;
     object-fit: cover !important;
-}}
-
+}
+body {
+    background: red !important;
+}
