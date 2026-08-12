@@ -858,18 +858,30 @@ opacity:1;
 transform:translateY(0);
 
 }
- /*office logo*/ 
+/* =========================
+   OFFICE IMAGE
+   ========================= */
+
 .office-logo {
-    width: 100%;
-    max-width: 350px;
-    height:auto;
     display: block;
-    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 18px;
 }
-   /*mobile*/
-@media (max-width:768px){
-    .office-logo{
-    max-width:90%;
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+    .office-logo {
+        width: 92%;
+        max-width: 400px;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 15px;
     }
-    }
+}
 }
