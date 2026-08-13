@@ -859,7 +859,8 @@ transform:translateY(0);
 
 }
 }
-.hero .office-logo {
+.office-logo,
+.creditscore-image {
     width: 350px;
     height: auto;
     max-width: 90%;
