@@ -867,3 +867,189 @@ transform:translateY(0);
     margin: 20px auto;
     border-radius: 18px;
 }
+/* ==========================================
+   FINAL WEBSITE RESPONSIVE SYSTEM
+   ========================================== */
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make all sections use the available screen */
+section {
+    width: 100%;
+}
+
+/* Main content */
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==========================================
+   LARGE DESKTOP
+   ========================================== */
+
+@media (min-width: 1200px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 100px 6%;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    .hero h3 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.7;
+    }
+
+    .services,
+    .why-section,
+    .testimonials,
+    .contact {
+        padding: 90px 6%;
+    }
+
+}
+
+
+/* ==========================================
+   LAPTOP / NORMAL DESKTOP
+   ========================================== */
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 80px 5%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    .hero h3 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services,
+    .why-section,
+    .testimonials,
+    .contact {
+        padding: 70px 5%;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 65px 5%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .services,
+    .why-section,
+    .testimonials,
+    .contact {
+        padding: 60px 5%;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.15;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .services,
+    .why-section,
+    .testimonials,
+    .contact {
+        padding: 50px 20px;
+    }
+
+}
