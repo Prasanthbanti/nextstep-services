@@ -1067,3 +1067,71 @@ body {
     }
 
 }
+.speciality-title {
+    position: relative;
+    display: inline-block;
+    padding: 12px 35px;
+    color: #0A4D68;
+    border: 2px solid #D4AF37;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+}
+
+/* Create multiple sparkling stars */
+.speciality-title::before {
+    content: "✦  ✧       ✦";
+    position: absolute;
+    left: -35px;
+    top: -28px;
+    color: #FFD700;
+    font-size: 18px;
+    letter-spacing: 8px;
+    animation: sparkleTop 1.8s infinite alternate;
+}
+
+.speciality-title::after {
+    content: "✧       ✦  ✧";
+    position: absolute;
+    right: -35px;
+    bottom: -28px;
+    color: #FFD700;
+    font-size: 18px;
+    letter-spacing: 8px;
+    animation: sparkleBottom 2s infinite alternate;
+}
+
+/* Sparkle animation */
+@keyframes sparkleTop {
+    0% {
+        opacity: 0.25;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes sparkleBottom {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.35;
+        transform: scale(0.9);
+    }
+}
