@@ -975,49 +975,74 @@ section {
 }
 
 
-/* ==========================================
-   TABLET
-   ========================================== */
+/* =========================================
+   NEXTSTEP SERVICES - FINAL SCREEN SIZING
+   ========================================= */
 
-@media (max-width: 768px) {
+html {
+    font-size: 16px;
+}
 
-    .container {
-        width: 92%;
-    }
+body {
+    width: 100%;
+    min-width: 320px;
+    margin: 0;
+    overflow-x: hidden;
+}
 
-    .hero {
-        padding: 65px 5%;
+/* Main content should use the screen properly */
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   DESKTOP / LAPTOP
+   ========================= */
+
+@media (min-width: 769px) {
+
+    body {
+        font-size: 18px;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 52px;
         line-height: 1.15;
     }
 
     .hero h3 {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .hero p {
-        font-size: 17px;
+        font-size: 19px;
         line-height: 1.6;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .services,
-    .why-section,
-    .testimonials,
-    .contact {
-        padding: 60px 5%;
+    .service-card,
+    .why-card,
+    .testimonial-card {
+        font-size: 17px;
     }
 
 }
 
 
-/* ==========================================
+/* =========================
    MOBILE
-   ========================================== */
+   ========================= */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+
+    html {
+        font-size: 16px;
+    }
 
     body {
         font-size: 16px;
@@ -1027,29 +1052,17 @@ section {
         width: 92%;
     }
 
-    .hero {
-        padding: 50px 20px;
-    }
-
     .hero h1 {
-        font-size: 32px;
-        line-height: 1.15;
+        font-size: 36px;
     }
 
     .hero h3 {
-        font-size: 20px;
+        font-size: 21px;
     }
 
     .hero p {
         font-size: 16px;
         line-height: 1.6;
-    }
-
-    .services,
-    .why-section,
-    .testimonials,
-    .contact {
-        padding: 50px 20px;
     }
 
 }
