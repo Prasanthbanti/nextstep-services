@@ -860,7 +860,8 @@ transform:translateY(0);
 }
 }
 .office-logo,
-.creditscore-image {
+.creditscore-image
+.train-image{
     width: 350px;
     height: auto;
     max-width: 90%;
