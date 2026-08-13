@@ -860,11 +860,11 @@ transform:translateY(0);
 }
 }
 .hero .office-logo {
-    width: 100px !important;
-    height: 100px !important;
-    max-width: 100px !important;
-    object-fit: cover !important;
+    width: 350px;
+    height: auto;
+    max-width: 90%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 18px;
 }
-body {
-    background: red !important;
-}
+
