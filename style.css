@@ -1071,31 +1071,44 @@ body {
 .speciality-title {
     position: relative;
     display: inline-block;
-    padding: 12px 25px;
-    color: #0A4D68;
+    padding: 15px 35px;
     background: white;
-    border-radius: 12px;
+    color: #0A4D68;
+    border-radius: 10px;
     z-index: 1;
 }
 
+/* Moving border */
 .speciality-title::before {
     content: "";
     position: absolute;
     inset: -2px;
-    border-radius: 14px;
+    border-radius: 12px;
+
     background: conic-gradient(
         from 0deg,
-        violet,
-        #8A2BE2,
-        violet,
-        #8A2BE2,
-        violet
+        transparent 0deg,
+        transparent 250deg,
+        violet 300deg,
+        #8A2BE2 330deg,
+        transparent 360deg
     );
-    animation: rotateBorder 3s linear infinite;
+
+    animation: movingBorder 2.5s linear infinite;
     z-index: -1;
 }
 
-@keyframes rotateBorder {
+/* White inner area */
+.speciality-title::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: white;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+@keyframes movingBorder {
     from {
         transform: rotate(0deg);
     }
