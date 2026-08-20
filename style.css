@@ -1068,37 +1068,44 @@ body {
     }
 
 }
-/* =================================
-   OUR SPECIALITY MOVING BORDER
-   ================================= */
+/* OUR SPECIALITY - MOVING BORDER */
 
 .speciality-title {
     position: relative;
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 1100px;
+    display: inline-block;
+    padding: 18px 45px;
+    margin: 30px auto;
+    border-radius: 12px;
     background: transparent;
-    border-radius: 20px;
     overflow: hidden;
 }
 
-/* Moving border */
-.speciality-title::before {
+/* Normal faint border */
+.speciality-title::after {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 3px;
+    border: 2px solid rgba(180, 100, 255, 0.25);
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+/* Bright moving border */
+.speciality-title::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+
+    border-radius: 14px;
 
     background: conic-gradient(
         from 0deg,
         transparent 0deg,
-        transparent 300deg,
-        violet 330deg,
-        #8a2be2 345deg,
+        transparent 320deg,
+        violet 340deg,
+        #8a2be2 350deg,
         transparent 360deg
     );
-
-    border-radius: 20px;
 
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
@@ -1107,18 +1114,21 @@ body {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 
-    animation: specialityBorderMove 3s linear infinite;
+    padding: 2px;
+
+    animation: specialityBorderMove 2.5s linear infinite;
 
     pointer-events: none;
 }
 
-/* Keep the content above the moving border */
-.speciality-box > * {
+/* Keep the text above the border */
+.speciality-title h2 {
     position: relative;
     z-index: 2;
+    margin: 0;
 }
 
-/* Clockwise movement */
+/* Move the bright border clockwise */
 @keyframes specialityBorderMove {
     from {
         transform: rotate(0deg);
